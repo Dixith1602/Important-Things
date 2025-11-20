@@ -22,3 +22,15 @@ if is_upper and is_digit and is_special and is_lower:
 else:
     print("Password is invalid")
 
+
+## Occurance of the same letter in the name;
+
+s = 'Dixith G R'
+freq = {}
+
+for char in s:
+    freq[char] = freq.get(char, 0) +1
+
+print(freq)
+
+
