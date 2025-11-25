@@ -1,6 +1,6 @@
 ## Write the program for password check;
 
-password = "Dixith!123"
+password = input("Enter your password: ")
 is_upper = False
 is_digit = False
 is_special = False
@@ -8,19 +8,19 @@ is_lower = False
 special_chars = "!@#$%^&*(),.?\":{}|<>"
 
 for char in password:
-    if 'A' <= char >= 'Z':
+    if char.isupper():
         is_upper = True
-    if 'a' <= char >= 'z':
+    elif char.islower():
         is_lower = True
-    if '0' <= char >= '9':
+    elif char.isdigit():
         is_digit = True
-    if char in special_chars:
+    elif char in special_chars:
         is_special = True
 
-if is_upper and is_digit and is_special and is_lower:
+if is_upper and is_lower and is_digit and is_special:
     print("Password is valid.")
 else:
-    print("Password is invalid")
+    print("Password is invalid.")
 
 
 ## Occurance of the same letter in the name;
