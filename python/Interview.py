@@ -8,11 +8,11 @@ is_lower = False
 special_chars = "!@#$%^&*(),.?\":{}|<>"
 
 for char in password:
-    if 'A' <= char <= 'Z':
+    if 'A' <= char >= 'Z':
         is_upper = True
-    if 'a' <= char <= 'z':
+    if 'a' <= char >= 'z':
         is_lower = True
-    if '0' <= char <= '9':
+    if '0' <= char >= '9':
         is_digit = True
     if char in special_chars:
         is_special = True
