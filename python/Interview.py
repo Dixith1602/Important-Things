@@ -34,3 +34,48 @@ for char in s:
 print(freq)
 
 
+#write a program to check the atm withdrawal
+
+balance = 5000
+pin : int(input("Enter your pin: "))
+read_card = False
+pin_number = False
+
+print("Welcome Please Insert your ATM card ")
+
+if read_card:
+    print("Enter your personal identification number")
+    if read_card:
+        print("Enter pin number")
+        if pin_number:
+            print("Please ennter the amount")
+            amount = int(input("Enter the amount: "))
+            if amount >= balance:
+                balance - amount
+                print("Withdrawn successfull")
+            else:
+                print("Insufficient balance")
+        else:
+            print("Entered incorrect pin")
+else:
+    print("error reading card")
+    print("There has been an error")
+    print("End of transaction")
+
+#Age criteria to match job
+
+age = 10
+degree = True
+experience = 3
+
+if age > 18:
+    if degree:
+        if experience>=3:
+            print("Eligible")
+        else: 
+            print("Not much experience")
+    else:
+        print("degree not met")
+else:
+    print("Age not matched")
+    print("Not eligible")
