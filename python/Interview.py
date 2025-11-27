@@ -79,3 +79,13 @@ if age > 18:
 else:
     print("Age not matched")
     print("Not eligible")
+
+#multiplication table
+
+num = int(input("Enter the number to get multiplication table: "))
+
+for i in range(1,11):
+    mul = num * i
+    print(f"{num} X {i} = {mul}")
+
+
