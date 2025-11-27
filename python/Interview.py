@@ -88,7 +88,7 @@ for i in range(1,11):
     mul = num * i
     print(f"{num} X {i} = {mul}")
 
-# Calculating the natural numbers
+# Calculating the natural numbers sum
 
 number = int(input("Enter the number to which it has to be calculated: "))
 total = 0
