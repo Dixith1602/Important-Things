@@ -96,3 +96,13 @@ for num in range(0,number+1):
     total = total + num
 print(total)
 
+#highest number in a list without inbuilt function
+
+numbers = [23, 45, 12, 67, 34, 89, 56]
+max_number = numbers[0]
+
+for num in numbers:
+    if num > max_number:
+        max_number = num
+
+print(f"Maximum number is: {max_number}")
