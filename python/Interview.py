@@ -106,3 +106,18 @@ for num in numbers:
         max_number = num
 
 print(f"Maximum number is: {max_number}")
+
+## most important code in the class (interview question)
+nums = [10, 5, 20, 20, 2, 18] 
+
+largest = float('-inf')    
+second_largest = float('-inf')
+
+for n in nums:
+    if n > largest:
+        second_largest = largest 
+        largest = n 
+    elif n > second_largest and n != largest:
+        second_largest = n 
+        
+print("Second largest :", second_largest)
