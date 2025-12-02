@@ -121,3 +121,11 @@ for n in nums:
         second_largest = n 
         
 print("Second largest :", second_largest)
+
+#reversing the string
+
+try_one = 'Python is fun to learn'
+reverse = try_one.split()
+wording = [a[::-1] for a in reverse]
+outputs = " ".join(wording)
+print(outputs)
