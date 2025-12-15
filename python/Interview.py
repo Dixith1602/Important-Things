@@ -129,3 +129,17 @@ reverse = try_one.split()
 wording = [a[::-1] for a in reverse]
 outputs = " ".join(wording)
 print(outputs)
+
+# Checking prime number or not
+
+def prime_number(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+# Calculating factorial
+
+
