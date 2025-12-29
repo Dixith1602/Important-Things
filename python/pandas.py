@@ -1,6 +1,6 @@
 #finding null values with different files which are in same location/path
 
-import pandas as ppd
+import pandas as pd
 import numpy as np
 import glob
 import os
