@@ -28,6 +28,3 @@ def basic_details(path):
     
     return results
 
-# Usage
-summary = basic_details(path)
-
